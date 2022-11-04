@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <style>
-  
+       footer{
+        position: fixed; 
+        left: 0;
+        bottom: 0;
+        width: 100%;
+       }
+       html{
+        height:150%;
+       }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

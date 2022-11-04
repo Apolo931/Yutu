@@ -10,4 +10,12 @@ class Video extends Model
     use HasFactory;
 
     protected $table = 'videos';
+    protected $fillable = [
+        'nombre',
+        'descripcion',
+        'fecha',
+        'categoria',
+        'restriccion_edad'
+
+    ];
 }

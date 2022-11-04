@@ -19,4 +19,5 @@ use App\Http\Controllers\RegistrarController;
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('/videos', [VideoController::class, 'consultar']);
-Route::get('/registrar', [RegistrarController::class, 'registrar']);
+Route::get('/registrar', [VideoController::class, 'registrar']);
+Route::post('/guardarRegistro', [VideoController::class, 'guardarRegistro']);

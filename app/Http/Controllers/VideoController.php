@@ -7,6 +7,7 @@ use App\Models\Video;
 
 class VideoController extends Controller
 {
+    
     function consultar(){
     
      
@@ -14,4 +15,17 @@ class VideoController extends Controller
     
     return view('video.videos', compact('videos'));
     }
+
+    function registrar(){
+        
+        return view('registrar');
+    }
+
+    function guardarRegistro(Request $datos){
+       
+        $video= Video::create($datos->post());
+        return redirect('/videos');
+
+    }
+
 }
