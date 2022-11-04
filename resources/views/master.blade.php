@@ -31,7 +31,7 @@
             </a>
             <div class="dropdown-menu">
             <a class="dropdown-item" href="{{url('/videos')}}">Consultar</a>
-            <a class="dropdown-item" href="#">Registrar</a>
+            <a class="dropdown-item" href="{{url('/registrar')}}">Registrar</a>
             <div class="dropdown-divider"></div>
             
             </div>
@@ -56,7 +56,7 @@
 
   <footer id="sticky-footer" class="flex-shrink-1 py-4 bg-secondary text-white-50">
     <div class="container text-center">
-      <small>Juan Pablo Castañeda Luzania y Paulo Cesar Irizar Casares</small>
+      <small>Juan Pablo Castañeda Luzania y Paulo Cesar Irizar Cazares</small>
     </div>
   </footer>
 </body>

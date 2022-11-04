@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\RegistrarController;
 
 
 /*
@@ -18,3 +19,4 @@ use App\Http\Controllers\VideoController;
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('/videos', [VideoController::class, 'consultar']);
+Route::get('/registrar', [RegistrarController::class, 'registrar']);
