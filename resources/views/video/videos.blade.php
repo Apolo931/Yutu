@@ -12,7 +12,6 @@
             <th>Fecha</th>
             <th>Categoria</th>
             <th>Restricción</th>
-            <th>Edicion</th>
         </thead>
 <tbody>
     @foreach ($videos as $v)
@@ -24,8 +23,8 @@
                 <td>{{ $v -> categoria}}</td>
                 <td>{{ $v -> restriccion_edad}}</td>
                 <td>
-                    <a href="" class="btn btn-primary btn-sm">Editar</a>
-                    <a href="" class="btn btn-danger btn-sm">Eliminar</a>
+                    <a href="{{url('/video/editar')}}/{{$v->id}}" class="btn btn-primary btn-sm">Editar</a>
+                    <a href="{{url('/video/eliminar')}}/{{$v->id}}" class="btn btn-danger btn-sm">Eliminar</a>
                 </td>
             </tr>
     @endforeach

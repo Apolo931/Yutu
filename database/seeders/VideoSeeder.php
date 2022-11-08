@@ -1,12 +1,12 @@
 <?php
 
 namespace Database\Seeders;
+
 use App\Models\Video;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class AlumnoSeeder extends Seeder
-{
+class VideoSeeder extends Seeder{
     /**
      * Run the database seeds.
      *
@@ -22,8 +22,18 @@ class AlumnoSeeder extends Seeder
             'categoria'              => 'videojuegos',
             'restriccion_edad'       => 0
          
-        ]
+        ]);
 
-        );
+        Video::create([
+
+            'nombre'                 => 'Rainbow Sics Sige',
+            'descripcion'            => 'Juego de locos',
+            'fecha'                  => '2010-11-05',
+            'categoria'              => 'videojuegos',
+            'restriccion_edad'       => 1
+         
+        ]);
+
+
     }
 }

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->String('categoria', 20);
             $table->boolean('restriccion_edad');
             $table->timestamps();
+            $table->SoftDeletes();
         });
     }
 
